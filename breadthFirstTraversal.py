@@ -14,6 +14,7 @@ def breadthFirst(start):
             if neighbour not in traversed and neighbour not in queue:
                 queue.append(neighbour)
         traversed.append(current)
+        #print(traversed)
         
     return traversed
 
@@ -21,7 +22,7 @@ graph = {
   'A' : ['B','C'],
   'B' : ['D', 'E'],
   'C' : ['F'],
-  'D' : [],
+  'D' : ['A'],
   'E' : ['F'],
   'F' : []
 }
